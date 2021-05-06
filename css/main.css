@@ -1,0 +1,73 @@
+/*colors*/
+/*Navbar*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF8AD6;
+  align-items: center;
+  padding: 1rem 0;
+}
+.header .logo {
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+.header .logo a {
+  color: #FBFCFB;
+  text-decoration: none;
+  text-shadow: 0 0 0px transparent;
+  position: relative;
+  animation-name: logo-animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.header .logo a:hover {
+  text-shadow: 0 0 30px #FBFCFB;
+}
+@keyframes logo-animate {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 1rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.header .navbar .navbar__ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.header .navbar .navbar__ul li {
+  margin-right: 1rem;
+}
+.header .navbar .navbar__ul li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #FBFCFB;
+  text-shadow: 0 0 0px transparent;
+  transition: 0.3s;
+}
+.header .navbar .navbar__ul li a:hover {
+  font-weight: 700;
+  text-shadow: 0 0 30px #FBFCFB;
+}
+
+/*Reset del font-size*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  background-color: #FBFCFB;
+}
+
+/*headings*/
+h1 {
+  font-size: 4rem;
+}
+
+/*# sourceMappingURL=main.css.map */

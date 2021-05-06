@@ -1,0 +1,68 @@
+
+/*Navbar*/
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	background-color: $branding;
+	align-items: center;
+	padding: 1rem 0;
+
+	.logo{
+		margin-left: 1rem;
+		font-size: 4rem;	
+
+		a{
+			color: $white;
+			text-decoration: none;
+			text-shadow: 0 0 0px transparent;
+			position: relative;
+			animation-name: logo-animate;
+	        animation-duration: 1s;
+	        animation-iteration-count: infinite;
+
+	        &:hover{
+	        	text-shadow: 0 0 30px $white;
+	        }
+		}
+
+		@keyframes logo-animate{
+			0%{
+				bottom: 0;
+			}
+
+			50%{
+				bottom: 1rem;
+			}
+
+			100%{
+				bottom: 0;
+			}
+		}
+
+	}
+
+	.navbar{
+		.navbar__ul{
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+			li{
+				margin-right: 1rem;
+
+				a{
+					font-size: 1.8rem;
+					text-decoration: none;
+					color: $white;
+					text-shadow: 0 0 0px transparent;
+					transition: .3s;
+
+					&:hover{
+						font-weight: 700;
+						text-shadow: 0 0 30px $white;
+					}
+				}
+			}
+		}
+	}
+}
