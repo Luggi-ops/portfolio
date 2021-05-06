@@ -1,4 +1,28 @@
 /*colors*/
+/*buttons*/
+.btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FBFCFB;
+  box-shadow: 0 0 20px transparent;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  display: inline-block;
+}
+.btn:hover {
+  box-shadow: 0 0 20px #FF8AD6;
+  transform: scale(1.1);
+}
+.btn i {
+  margin-right: 1rem;
+}
+
+.btn-dark {
+  background-color: #FF8AD6;
+}
+
 /*Navbar*/
 .header {
   display: flex;
@@ -54,6 +78,47 @@
   text-shadow: 0 0 30px #FBFCFB;
 }
 
+/*Top section*/
+.top-section .top-section__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.top-section .top-section__content .top-section__text {
+  width: max-content;
+  margin-right: 5rem;
+}
+.top-section .top-section__content .top-section__text p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #CDC5BA;
+}
+.top-section .top-section__content .top-section__img {
+  width: 50%;
+}
+.top-section .top-section__dates {
+  display: flex;
+  justify-content: center;
+}
+.top-section .top-section__dates dl {
+  list-style: none;
+  display: flex;
+}
+.top-section .top-section__dates dl .top-section__dates__item {
+  margin-right: 10rem;
+}
+.top-section .top-section__dates dl .top-section__dates__item dt {
+  font-weight: 700;
+}
+.top-section .top-section__dates dl .top-section__dates__item dd {
+  margin: 0;
+}
+.top-section .top-section__dates dl .top-section__dates__item dd a {
+  color: #4A4946;
+  text-decoration: none;
+}
+
 /*Reset del font-size*/
 html {
   font-size: 62.5%;
@@ -63,11 +128,22 @@ body {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   background-color: #FBFCFB;
+  color: #4A4946;
 }
 
 /*headings*/
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/*img*/
+img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

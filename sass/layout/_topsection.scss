@@ -1,0 +1,52 @@
+/*Top section*/
+
+.top-section{
+	.top-section__content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80vh;
+
+		.top-section__text{
+			width: max-content;
+			margin-right: 5rem;
+
+			p{
+				font-size: 3rem;
+				font-weight: 700;
+				color: $gray;
+			}
+		}
+
+		.top-section__img{
+			width: 50%;
+		}
+	}
+
+	.top-section__dates{
+		display: flex;
+		justify-content: center;
+		dl{
+			list-style: none;
+			display: flex;
+
+			.top-section__dates__item{
+				margin-right: 10rem;
+
+				dt{
+					font-weight: 700;
+				}
+				dd{
+					margin: 0;
+
+					a{
+						color: $black;
+						text-decoration: none;
+					}
+				}
+			}
+
+
+		}
+	}
+}

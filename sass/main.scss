@@ -1,5 +1,7 @@
 @import 'components/colors';
+@import 'components/btn';
 @import 'layout/nav';
+@import 'layout/topsection';
 
 
 /*Reset del font-size*/
@@ -11,10 +13,22 @@ body{
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	background-color: $white;
+	color: $black;
 }
 
 /*headings*/
 
 h1{
-	font-size: 4rem;
+	font-size: 5rem;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+/*img*/
+
+img{
+	width: 100%;
+	height: auto;
 }
