@@ -1,8 +1,11 @@
 /*Top section*/
 
 .top-section{
+	width: 100%;
+
 	.top-section__content{
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 		height: 80vh;
@@ -29,9 +32,16 @@
 		dl{
 			list-style: none;
 			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
 
 			.top-section__dates__item{
 				margin-right: 10rem;
+
+				&:last-of-type{
+					margin: 0;
+				}
 
 				dt{
 					font-weight: 700;

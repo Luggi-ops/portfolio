@@ -23,6 +23,11 @@
   background-color: #FF8AD6;
 }
 
+/*Waves*/
+.waves {
+  width: 100%;
+}
+
 /*Navbar*/
 .header {
   display: flex;
@@ -79,8 +84,12 @@
 }
 
 /*Top section*/
+.top-section {
+  width: 100%;
+}
 .top-section .top-section__content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 80vh;
@@ -104,9 +113,15 @@
 .top-section .top-section__dates dl {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .top-section .top-section__dates dl .top-section__dates__item {
   margin-right: 10rem;
+}
+.top-section .top-section__dates dl .top-section__dates__item:last-of-type {
+  margin: 0;
 }
 .top-section .top-section__dates dl .top-section__dates__item dt {
   font-weight: 700;
