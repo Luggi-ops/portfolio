@@ -1,0 +1,48 @@
+
+/*About me*/
+
+.about{
+	background-color: $branding;
+	color: $white;
+	padding: 0 0 10rem 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 5rem;
+	position: relative;
+
+	.about__head{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+
+		h2{
+			font-family: 'Archivo Black', sans-serif;
+			font-size: 5rem;
+		}
+	}
+
+	.about__dates{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.dates__img{
+			width: 30rem;
+		}
+
+		.dates__text{
+			ul{
+				list-style: none;
+				padding: 0;
+			}
+
+		}
+	}
+}

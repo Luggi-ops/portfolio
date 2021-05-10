@@ -23,9 +23,17 @@
   background-color: #FF8AD6;
 }
 
+.btn-light {
+  background-color: #FBFCFB;
+  color: #FF8AD6;
+}
+
 /*Waves*/
 .waves {
   width: 100%;
+  position: absolute;
+  top: -19rem;
+  z-index: -1;
 }
 
 /*Navbar*/
@@ -104,7 +112,7 @@
   color: #CDC5BA;
 }
 .top-section .top-section__content .top-section__img {
-  width: 50%;
+  width: 40%;
 }
 .top-section .top-section__dates {
   display: flex;
@@ -132,6 +140,43 @@
 .top-section .top-section__dates dl .top-section__dates__item dd a {
   color: #4A4946;
   text-decoration: none;
+}
+
+/*About me*/
+.about {
+  background-color: #FF8AD6;
+  color: #FBFCFB;
+  padding: 0 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  position: relative;
+}
+.about .about__head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.about .about__head h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 5rem;
+}
+.about .about__dates {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about .about__dates .dates__img {
+  width: 30rem;
+}
+.about .about__dates .dates__text ul {
+  list-style: none;
+  padding: 0;
 }
 
 /*Reset del font-size*/
