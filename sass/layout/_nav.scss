@@ -24,6 +24,10 @@
 	        &:hover{
 	        	text-shadow: 0 0 30px $white;
 	        }
+
+	        &:focus{
+	        	text-shadow: 0 0 30px $white;
+	        }
 		}
 
 		@keyframes logo-animate{
@@ -60,6 +64,28 @@
 					&:hover{
 						font-weight: 700;
 						text-shadow: 0 0 30px $white;
+					}
+
+					&:focus{
+						font-weight: 700;
+						text-shadow: 0 0 30px $white;						
+					}
+
+				}
+
+				.btn-nav{
+					
+
+					&:hover{
+						color: $branding;
+						text-shadow: 0 0 0px transparent;
+						font-weight: 400;
+					}
+
+					&:focus{
+						color: $branding;
+						text-shadow: 0 0 0px transparent;
+						font-weight: 400;						
 					}
 				}
 			}

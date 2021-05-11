@@ -4,11 +4,16 @@
 @import 'layout/nav';
 @import 'layout/topsection';
 @import 'layout/about';
-
+@import 'layout/services';
 
 /*Reset del font-size*/
 html{
 	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -25,7 +30,8 @@ h1{
 }
 
 h2{
-	font-size: 3rem;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 5rem;
 }
 
 /*img*/

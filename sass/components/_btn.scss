@@ -16,6 +16,11 @@
 		box-shadow: 0 0 20px $branding;
 		transform: scale(1.1);
 	}
+
+	&:focus{
+		box-shadow: 0 0 20px $branding;
+		transform: scale(1.1);		
+	}
 	
 	i{
 		margin-right: 1rem;
@@ -29,4 +34,18 @@
 .btn-light{
 	background-color: $white;
 	color: $branding;
+}
+
+.btn-nav{
+	border: 2px solid $white;
+	padding: .5rem 2rem;
+	border-radius: 2rem;
+
+	&:hover{
+		background-color: $white;
+	}
+
+	&:focus{
+		background-color: $white;		
+	}
 }
