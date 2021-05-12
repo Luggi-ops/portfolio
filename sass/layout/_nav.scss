@@ -33,13 +33,32 @@
 		&::after{
         	content: '';
         	display: inline-block;
-        	width: 4rem;
+        	width: 3rem;
         	height: .3rem;
         	background-color: $black;
         	border-radius: 50%;
         	position: absolute;
         	bottom: 0;
         	left: 0;
+        	animation-name: shadow;
+        	animation-duration: 1s;
+        	animation-iteration-count: infinite;
+
+        	transform: translateX(25%);
+        }
+
+        @keyframes shadow{
+        	0%{
+				width: 2rem;
+			}
+
+			50%{
+				width: 3rem;
+			}
+
+			100%{
+				width: 2rem;
+			}
         }
 
 		
