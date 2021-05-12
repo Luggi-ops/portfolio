@@ -286,6 +286,7 @@
 .works {
   background-color: #FF8AD6;
   color: #FBFCFB;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,6 +333,64 @@
 }
 .works .works__content .works__item .works_btn .btn:last-of-type {
   margin: 0;
+}
+.works .waves__top {
+  top: -30rem;
+}
+.works .waves__bottom {
+  bottom: -30rem;
+}
+
+/**Skills**/
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+}
+.skills .skills__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 20rem);
+  column-gap: 2rem;
+}
+.skills .skills__container .skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+.skills .skills__container .skills__item i {
+  font-size: 5rem;
+  order: -1;
+  transition: 0.5s;
+}
+.skills .skills__container .skills__item:hover {
+  transform: scale(1.2);
+}
+.skills .skills__container .skills__item:hover > .fa-html5 {
+  color: #e96228;
+}
+.skills .skills__container .skills__item:hover > .fa-css3-alt {
+  color: #01a7dd;
+}
+.skills .skills__container .skills__item:hover > .fa-sass {
+  color: #bf608f;
+}
+.skills .skills__container .skills__item:hover > .fa-js {
+  color: #f7d901;
+}
+.skills .skills__container .skills__item:hover > .fa-git-alt {
+  color: #e94e31;
+}
+.skills .skills__container .skills__item:hover > .fa-database {
+  color: #3295db;
+}
+.skills .skills__container .skills__item:hover > .fa-cloud {
+  color: #4d8aef;
+}
+.skills .skills__container .skills__item:hover > .fa-network-wired {
+  color: #00b6e3;
 }
 
 /*Reset del font-size*/

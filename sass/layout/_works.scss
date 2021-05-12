@@ -4,7 +4,7 @@
 .works{
 	background-color: $branding;
 	color: $white;
-
+	position: relative;
 
 	display: flex;
 	flex-direction: column;
@@ -62,6 +62,14 @@
 			}
 		}
 
+	}
+
+	.waves__top{
+		top: -30rem;
+	}
+
+	.waves__bottom{
+		bottom: -30rem;
 	}
 
 }

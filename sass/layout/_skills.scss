@@ -1,0 +1,65 @@
+
+
+/**Skills**/
+
+.skills{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20rem;
+
+	.skills__container{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 20rem);
+		column-gap: 2rem;
+
+		.skills__item{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: .5s;
+
+			i{
+				font-size: 5rem;
+				order: -1;
+				transition: .5s;
+			}
+
+			&:hover{
+				transform: scale(1.2);
+			}
+
+			&:hover >.fa-html5{
+				color: #e96228;	
+			}
+			&:hover >.fa-css3-alt{
+				color: #01a7dd;	
+			}
+
+			&:hover >.fa-sass{
+				color: #bf608f;
+			}
+
+			&:hover >.fa-js{
+				color: #f7d901;
+			}
+
+			&:hover >.fa-git-alt{
+				color: #e94e31;
+			}
+
+			&:hover >.fa-database{
+				color: #3295db;
+			}
+
+			&:hover >.fa-cloud{
+				color: #4d8aef;
+			}
+
+			&:hover >.fa-network-wired{
+				color: #00b6e3;
+			}
+		}
+	}
+}
