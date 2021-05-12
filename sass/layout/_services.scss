@@ -52,5 +52,12 @@
 	.services{
 		width: 90%;
 		margin: 0 auto;
+
+		.services__content{
+			.services__item{
+				width: auto;
+			}
+
+		}
 	}
 }

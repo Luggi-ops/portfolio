@@ -80,6 +80,7 @@
 .header .logo {
   margin-left: 1rem;
   font-size: 4rem;
+  position: relative;
 }
 .header .logo a {
   color: #FBFCFB;
@@ -95,6 +96,17 @@
 }
 .header .logo a:focus {
   text-shadow: 0 0 30px #FBFCFB;
+}
+.header .logo::after {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: #4A4946;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 @keyframes logo-animate {
   0% {
@@ -229,7 +241,7 @@
 }
 /*About me*/
 .about {
-  background-image: url("../assets/img/bg-about.jpg");
+  background-image: url("../assets/img/bg-about.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #FBFCFB;
@@ -261,6 +273,7 @@
   border-radius: 50%;
   margin-right: 3rem;
   margin-top: 3rem;
+  box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.24);
 }
 .about .about__dates .dates__text ul {
   list-style: none;
@@ -272,8 +285,15 @@
 }
 
 @media (max-width: 992px) {
+  .about {
+    padding: 5rem;
+    text-align: center;
+  }
   .about .about__head {
     width: 100%;
+  }
+  .about .about__dates .dates__img img {
+    margin-right: 0;
   }
 }
 /*Services*/
@@ -320,10 +340,13 @@
     width: 90%;
     margin: 0 auto;
   }
+  .services .services__content .services__item {
+    width: auto;
+  }
 }
 /*works*/
 .works {
-  background-image: url("../assets/img/bg-works.jpg");
+  background-image: url("../assets/img/bg-works.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #FBFCFB;
@@ -379,6 +402,7 @@
 @media (max-width: 992px) {
   .works .carousel .carousel-inner {
     width: 90%;
+    padding: 2rem;
   }
   .works .carousel .carousel-inner .works__item .works_button {
     flex-direction: column;
@@ -407,11 +431,15 @@
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  text-align: center;
 }
 .skills .skills__container .skills__item i {
   font-size: 5rem;
   order: -1;
   transition: 0.5s;
+}
+.skills .skills__container .skills__item:last-of-type {
+  grid-column-start: 2;
 }
 .skills .skills__container .skills__item:hover {
   transform: scale(1.2);
@@ -424,6 +452,12 @@
 }
 .skills .skills__container .skills__item:hover > .fa-sass {
   color: #bf608f;
+}
+.skills .skills__container .skills__item:hover > .fa-bootstrap {
+  color: #533b78;
+}
+.skills .skills__container .skills__item:hover > .fa-code {
+  color: #f44336;
 }
 .skills .skills__container .skills__item:hover > .fa-js {
   color: #f7d901;
@@ -447,6 +481,9 @@
     grid-template-rows: repeat(9, 10rem);
     column-gap: 0;
     row-gap: 2rem;
+  }
+  .skills .skills__container .skills__item:last-of-type {
+    grid-column-start: 1;
   }
 }
 /*Reset del font-size*/

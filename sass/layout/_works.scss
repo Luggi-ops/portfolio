@@ -1,7 +1,7 @@
 /*works*/
 
 .works {
-    background-image: url('../assets/img/bg-works.jpg');
+    background-image: url('../assets/img/bg-works.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
@@ -73,6 +73,7 @@
 		.carousel{
 			.carousel-inner{
 				width: 90%;
+                padding: 2rem;
 
 				.works__item{
 					.works_button{

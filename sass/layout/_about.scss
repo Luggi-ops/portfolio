@@ -2,7 +2,7 @@
 /*About me*/
 
 .about{
-	background-image: url('../assets/img/bg-about.jpg');
+	background-image: url('../assets/img/bg-about.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $white;
@@ -42,6 +42,7 @@
 				border-radius: 50%;
 				margin-right: 3rem;
 				margin-top: 3rem;
+				box-shadow: 5px 6px 0px 0px rgba(0,0,0,0.24);
 			}
 		}
 
@@ -64,14 +65,17 @@
 
 @media (max-width: 992px){
 	.about{
+		padding: 5rem;
+		text-align: center;
 		.about__head{
 			width: 100%;
 		}
 
 		.about__dates{
 			.dates__img{
+
 				img{
-					
+					margin-right: 0;
 				}
 			}
 		}

@@ -20,11 +20,16 @@
 			align-items: center;
 			justify-content: center;
 			transition: .5s;
+			text-align: center;
 
 			i{
 				font-size: 5rem;
 				order: -1;
 				transition: .5s;
+			}
+
+			&:last-of-type{
+				grid-column-start: 2;
 			}
 
 			&:hover{
@@ -40,6 +45,14 @@
 
 			&:hover >.fa-sass{
 				color: #bf608f;
+			}
+
+			&:hover >.fa-bootstrap{
+				color: #533b78;
+			}
+
+			&:hover >.fa-code{
+				color: #f44336;
 			}
 
 			&:hover >.fa-js{
@@ -61,6 +74,9 @@
 			&:hover >.fa-network-wired{
 				color: #00b6e3;
 			}
+
+
+
 		}
 	}
 }
@@ -72,6 +88,14 @@
 			grid-template-rows: repeat(9, 10rem);
 			column-gap: 0;
 			row-gap: 2rem;
+
+			.skills__item{
+
+				&:last-of-type{
+					grid-column-start: 1;
+				}
+			}
+
 		}
 	}
 }
