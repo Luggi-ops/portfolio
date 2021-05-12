@@ -64,3 +64,30 @@
 		}
 	}
 }
+@media (max-width: 992px){
+	.top-section{
+		padding-bottom: 5rem;
+
+		.top-section__content{
+			height: auto;
+			.top-section__text{
+				margin: 0;
+			}
+
+			.top-section__img{
+				width: 55%;
+				order: -1;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.top-section{
+		.top-section__content{
+			.top-section__img{
+				width: 90%;
+			}
+		}
+	}
+}

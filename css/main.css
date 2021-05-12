@@ -141,6 +141,18 @@
   font-weight: 400;
 }
 
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .navbar__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .navbar__ul li {
+    margin-bottom: 1rem;
+  }
+}
 /*Top section*/
 .top-section {
   width: 100%;
@@ -195,6 +207,26 @@
   text-decoration: none;
 }
 
+@media (max-width: 992px) {
+  .top-section {
+    padding-bottom: 5rem;
+  }
+  .top-section .top-section__content {
+    height: auto;
+  }
+  .top-section .top-section__content .top-section__text {
+    margin: 0;
+  }
+  .top-section .top-section__content .top-section__img {
+    width: 55%;
+    order: -1;
+  }
+}
+@media (max-width: 480px) {
+  .top-section .top-section__content .top-section__img {
+    width: 90%;
+  }
+}
 /*About me*/
 .about {
   background-image: url("../assets/img/bg-about.jpg");
@@ -221,17 +253,29 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.about .about__dates .dates__img {
-  width: 30rem;
+.about .about__dates .dates__img img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 50%;
+  margin-right: 3rem;
+  margin-top: 3rem;
 }
 .about .about__dates .dates__text ul {
   list-style: none;
   padding: 0;
+  margin-top: 3rem;
 }
 .about .about__dates .button:hover {
   color: #FF8AD6;
 }
 
+@media (max-width: 992px) {
+  .about .about__head {
+    width: 100%;
+  }
+}
 /*Services*/
 .services {
   padding: 10rem 0;
@@ -271,6 +315,12 @@
   align-items: center;
 }
 
+@media (max-width: 480px) {
+  .services {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 /*works*/
 .works {
   background-image: url("../assets/img/bg-works.jpg");
@@ -434,6 +484,12 @@ h3 {
 img {
   width: 100%;
   height: auto;
+}
+
+/*utilities*/
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

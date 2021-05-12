@@ -31,14 +31,25 @@
 		flex-wrap: wrap;
 		align-items: center;
 
+		
+
 		.dates__img{
-			width: 30rem;
+			img{
+				width: 25rem;
+				height: 25rem;
+				object-fit: cover;
+				object-position: 50% 30%;
+				border-radius: 50%;
+				margin-right: 3rem;
+				margin-top: 3rem;
+			}
 		}
 
 		.dates__text{
 			ul{
 				list-style: none;
 				padding: 0;
+				margin-top: 3rem;
 			}
 
 		}
@@ -46,6 +57,22 @@
 		.button{
 			&:hover{
 				color: $branding;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px){
+	.about{
+		.about__head{
+			width: 100%;
+		}
+
+		.about__dates{
+			.dates__img{
+				img{
+					
+				}
 			}
 		}
 	}

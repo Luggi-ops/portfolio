@@ -92,3 +92,18 @@
 		}
 	}
 }
+
+@media (max-width: 480px){
+	.header{
+		flex-direction: column;
+
+		.navbar__ul{
+			flex-direction: column;
+			align-items: center;
+
+			li{
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}

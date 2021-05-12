@@ -46,8 +46,11 @@
 			}
 		}
 	}
+}
 
-
-
-
+@media (max-width: 480px){
+	.services{
+		width: 90%;
+		margin: 0 auto;
+	}
 }
