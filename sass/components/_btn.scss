@@ -1,7 +1,7 @@
 
 /*buttons*/
 
-.btn{
+.button{
 	text-decoration: none;
 	text-transform: capitalize;
 	color: $white;
@@ -15,6 +15,7 @@
 	&:hover{
 		box-shadow: 0 0 20px $branding;
 		transform: scale(1.1);
+		color: $white;
 	}
 
 	&:focus{
@@ -27,16 +28,16 @@
 	}
 }
 
-.btn-dark{
+.button-dark{
 	background-color: $branding;
 }
 
-.btn-light{
+.button-light{
 	background-color: $white;
 	color: $branding;
 }
 
-.btn-nav{
+.button-nav{
 	border: 2px solid $white;
 	padding: .5rem 2rem;
 	border-radius: 2rem;
@@ -50,21 +51,22 @@
 	}
 }
 
-.btn-gh{
+.button-gh{
 	background-color: #24292e;
 
 	&:hover{
 		background-color: #2ea44f;
 		box-shadow: 0 0 20px $black;
+		color: $white;
 	}
 }
 
-.btn-pdf{
-	background-color: #f72015;
 
-	&:hover{
-		background-color: #ededed;
-		color: #f72015;
-		box-shadow: 0 0 20px $black;
+@media (max-width: 992px){
+
+	.button{
+		width: 100%;
+		text-align: center;
 	}
+	
 }

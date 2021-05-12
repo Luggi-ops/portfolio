@@ -2,17 +2,19 @@
 /*About me*/
 
 .about{
-	background-color: $branding;
+	background-image: url('../assets/img/bg-about.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: $white;
-	padding: 5rem 0 7rem 0;
+	padding: 10rem;
+	height: 124rem;
+	
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	margin: 5rem 0 10rem 0;
-	position: relative;
 
 	.about__head{
 		display: flex;
@@ -39,6 +41,12 @@
 				padding: 0;
 			}
 
+		}
+
+		.button{
+			&:hover{
+				color: $branding;
+			}
 		}
 	}
 }

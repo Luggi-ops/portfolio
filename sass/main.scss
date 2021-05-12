@@ -12,6 +12,7 @@
 html{
 	font-size: 62.5%;
 	box-sizing: border-box;
+
 }
 
 *, *:before, *:after {
@@ -23,6 +24,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	background-color: $white;
 	color: $black;
+	
 }
 
 /*headings*/
@@ -34,6 +36,10 @@ h1{
 h2{
 	font-family: 'Archivo Black', sans-serif;
 	font-size: 5rem;
+}
+
+h3{
+	font-weight: 600;
 }
 
 /*img*/
