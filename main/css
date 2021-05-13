@@ -144,7 +144,6 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-  margin: 0;
 }
 .header .navbar .navbar__ul li {
   margin-right: 1rem;
@@ -512,46 +511,14 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100rem;
-  background-image: url("../assets/img/bg-contactme.png");
-  background-repeat: no-repeat;
-}
-.contact .contact__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact .contact__header img {
-  width: 20rem;
-}
-.contact .contact__form {
-  background-color: #FBFCFB;
-  padding: 5rem;
-  box-shadow: 2px 5px 9px -4px rgba(0, 0, 0, 0.75);
-  border-radius: 1rem;
-  width: min(40rem, 90%);
-}
-.contact .contact__form form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-.contact .contact__form form input, .contact .contact__form form textarea {
-  margin-bottom: 1rem;
-  border: none;
-  border-bottom: 1px solid #CDC5BA;
-}
-.contact .contact__form form input:focus, .contact .contact__form form textarea:focus {
-  border: none;
-  outline: none;
 }
 
 /*Reset del font-size*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -591,4 +558,9 @@ img {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=main.css.map */
+.top-section, .about, .services, .works, .skills, .contact {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/*# sourceMappingURL=css.map */

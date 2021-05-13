@@ -1,0 +1,51 @@
+
+/*Contact*/
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100rem;
+
+	background-image: url('../assets/img/bg-contactme.png');
+	background-repeat: no-repeat;
+
+	.contact__header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img{
+			width: 20rem;
+		}
+	}
+
+	
+
+	.contact__form{
+		background-color: $white;
+		padding: 5rem;
+		box-shadow: 2px 5px 9px -4px rgba(0,0,0,0.75);
+		border-radius: 1rem;
+		width: min(40rem, 90%);
+	
+		form{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2rem;
+
+
+			input, textarea{
+				margin-bottom: 1rem;
+				border: none;
+				border-bottom: 1px solid $gray;
+
+				&:focus{
+					border: none;
+					outline: none;
+				}
+			}
+		}
+	}
+	
+}

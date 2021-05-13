@@ -7,12 +7,12 @@
 @import 'layout/services';
 @import 'layout/works';
 @import 'layout/skills';
+@import 'layout/contact';
 
 /*Reset del font-size*/
 html{
 	font-size: 62.5%;
 	box-sizing: border-box;
-
 }
 
 *, *:before, *:after {
@@ -23,8 +23,7 @@ body{
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	background-color: $white;
-	color: $black;
-	
+	color: $black; 
 }
 
 /*headings*/
