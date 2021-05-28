@@ -94,6 +94,7 @@
   margin-left: 1rem;
   font-size: 4rem;
   position: relative;
+  z-index: 100;
 }
 .header .logo a {
   color: #FBFCFB;
@@ -187,9 +188,6 @@
     display: inline-block;
     z-index: 100;
   }
-  .header .fa-bars:before {
-    transition: 1s;
-  }
   .header .navbar {
     clip-path: circle(0% at 100% 0);
     transition: all 0.7s ease;
@@ -197,12 +195,12 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     position: absolute;
     justify-content: center;
     background-color: #FF8AD6;
+    background: linear-gradient(165deg, #FF8AD6, #f857a6);
     align-items: normal;
-    margin-top: 6rem;
   }
   .header .navbar_responsive {
     clip-path: circle(70.7% at 50% 50%);
